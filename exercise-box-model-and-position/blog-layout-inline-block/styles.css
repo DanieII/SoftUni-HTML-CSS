@@ -1,0 +1,15 @@
+body {
+  display: flex;
+  background-color: rgb(238, 238, 238);
+  color: rgb(51, 51, 51);
+  padding: 1em;
+}
+
+article img {
+  max-width: 80%;
+}
+
+aside {
+  display: inline-block;
+  min-width: fit-content;
+}
