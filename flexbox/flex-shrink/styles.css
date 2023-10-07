@@ -1,0 +1,15 @@
+.flex-container {
+  display: flex;
+}
+
+#box1 {
+  flex-shrink: 0;
+}
+
+#box2 {
+  flex-shrink: 1;
+}
+
+#box3 {
+  flex-shrink: 2;
+}

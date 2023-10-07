@@ -1,0 +1,15 @@
+.flex-container {
+  display: flex;
+}
+
+#box1 {
+  order: 2;
+}
+
+#box2 {
+  order: 0;
+}
+
+#box3 {
+  order: 1;
+}
