@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter;
+  background-image: url("./01.Forum_Resources/images/background.jpg");
+  background-repeat: round;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  padding: 2em;
+}
+
+.forum {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.forum article {
+  display: flex;
+  background-color: #fff;
+  padding: 3em 2em 2em 2em;
+}
+
+.image-container {
+  border-radius: 50%;
+}
+
+img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.author-name {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  flex: 3;
+  flex-basis: 755px;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+.left .image-container {
+  width: 200px;
+  height: 200px;
+  margin-left: 2em;
+}
+
+.left article div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.left img {
+  width: 200px;
+}
+
+.right .image-container {
+  width: 100px;
+  height: 100px;
+  filter: grayscale(100%);
+}
+
+.right img {
+  width: 100px;
+}
+
+.right {
+  flex: 1;
+  flex-basis: 377px;
+  flex-grow: 0;
+}
+
+.left [class*="quote"] {
+  font-size: 3em;
+}
+
+.right [class*="quote"] {
+  font-size: 4em;
+}
+
+.right article {
+  flex-direction: column;
+  height: 100%;
+}
+
+.right article > p {
+  margin-block: 3.3em auto;
+}
+
+.right .author-information {
+  border-top: 2px solid #eee;
+  padding-top: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.right .image-container {
+  margin-right: 1em;
+}
+
+.right .job {
+  font-size: 0.8em;
+}
