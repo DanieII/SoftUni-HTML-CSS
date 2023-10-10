@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font:
+    16px/1.5 Inter,
+    sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1em 0.8em;
+  background-color: #ddd;
+  background-position: bottom;
+}
+
+header a {
+  color: black;
+  opacity: 60%;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+header nav ul {
+  display: flex;
+  gap: 1em;
+  margin-left: 3em;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header > a {
+  padding: 0.5em 1em;
+  border: 1px solid black;
+  margin-right: 2em;
+  background-color: white;
+  border-radius: 0.5em;
+  font-size: 0.7em;
+}
+
+.banner {
+  background-image: url("03.PlanScheduler_Resources/images/background.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.banner p,
+.banner a {
+  color: white;
+}
+
+.banner h1 {
+  padding-bottom: 2em;
+  font-weight: 600;
+  font-size: 1.7em;
+}
+
+.banner p {
+  margin-bottom: 2em;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.banner a {
+  background-color: black;
+  padding: 0.8em 1.3em;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.banner div {
+  padding: 10% 0 8% 17%;
+}
+
+.numbers {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.numbers ul {
+  display: flex;
+  margin-inline: 3em;
+  margin-block: 2em 1em;
+  justify-content: space-around;
+}
+
+.numbers ul li {
+  list-style: none;
+  text-align: center;
+}
+
+.number {
+  color: orangered;
+  font-size: 1.8em;
+  padding-bottom: 0.5em;
+}
+
+.numbers ul li p:nth-of-type(2) {
+  font-size: 0.8em;
+  opacity: 60%;
+}
+
+.numbers ul li p:nth-of-type(3) {
+  font-size: 0.5em;
+  opacity: 50%;
+}
+
+.activities {
+  background-color: #d9d9d9;
+  padding-bottom: 2em;
+}
+
+.activities ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.activities ul li {
+  display: flex;
+  padding: 1.5em 2em 0 2em;
+  align-items: center;
+}
+
+.activities img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-right: 1em;
+}
+
+.activities p:nth-of-type(1) {
+  font-size: 0.7em;
+}
+
+.activities .title {
+  font-size: 1.2em;
+  font-weight: 600;
+  padding-block: 1em;
+}
+
+.activities p:nth-of-type(2) {
+  font-size: 0.6em;
+  opacity: 60%;
+}
+
+.activities p:nth-of-type(3) {
+  font-size: 0.7em;
+  font-weight: 500;
+  opacity: 70%;
+}
+
+.activities .author {
+  font-size: 0.7em;
+  opacity: 60%;
+  padding-top: 2em;
+}
+
+.pricing {
+  background-color: #eee7e7;
+  padding-inline: 2em;
+}
+
+.pricing > div {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em;
+}
+
+.pricing .description h2 {
+  font-size: 1.2em;
+  font-weight: 500;
+  padding-bottom: 1em;
+}
+
+.pricing .description p {
+  font-size: 0.6em;
+  opacity: 60%;
+}
+
+.pricing .plans {
+  margin-left: 0.5em;
+}
+
+.pricing .plans ul {
+  display: flex;
+  gap: 1em;
+}
+
+.pricing .plans ul li {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-align: center;
+  padding: 1em 4.5em;
+  box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.16);
+}
+
+.pricing .plans ul li:nth-of-type(1) {
+  background-color: #ff7c4c;
+}
+
+.pricing .plans ul li:nth-of-type(1) a {
+  background-color: black;
+  color: white;
+}
+
+.pricing .plans ul li:nth-of-type(2) {
+  color: white;
+  background-color: black;
+}
+
+.pricing .plans ul li:nth-of-type(2) a {
+  color: black;
+  background-color: white;
+}
+
+.pricing .plans ul li a {
+  text-decoration: none;
+  border: 1px solid black;
+  font-size: 0.6em;
+  padding: 0.5em;
+  font-weight: bold;
+}
+
+.pricing .plans ul li p span {
+  font-weight: bold;
+}
+
+.pricing .plans ul li div {
+  margin-block: 1em 2em;
+}
+
+.pricing .plans ul li div p {
+  white-space: nowrap;
+  font-size: 0.7em;
+}
+
+.pricing .plans ul li div p:last-of-type {
+  font-weight: bold;
+}
+
+.pricing .plans .price {
+  font-size: 2.5em;
+  font-weight: 100;
+}
+
+footer {
+  background-color: #d9d9d9;
+  padding: 1em 5em;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer ul li i {
+  font-size: 0.7em;
+  color: black;
+}
