@@ -1,0 +1,43 @@
+header,
+main,
+aside,
+footer {
+  box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 0.4em;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  background-color: #eee;
+  padding: 3em;
+}
+
+header,
+footer {
+  flex-basis: 100%;
+}
+
+main {
+  flex-grow: 3;
+}
+
+aside {
+  flex-grow: 1;
+}
+
+header p {
+  padding-bottom: 2em;
+}
+
+main p,
+aside p {
+  padding-bottom: 8em;
+}
+
+footer p {
+  padding-bottom: 1em;
+}

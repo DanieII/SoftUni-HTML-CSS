@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(238, 238, 238);
+}
+
+.container ul {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+
+.container ul li {
+  list-style: none;
+  flex-basis: 10em;
+  overflow: hidden;
+  transition: flex-basis 0.2s ease-in-out;
+  border-radius: 1em;
+  box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.5);
+}
+
+.container ul li img {
+  display: block;
+  height: 100%;
+}
+
+.container ul li:hover {
+  flex-basis: 35em;
+}
