@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+html {
+  font-family: Inter, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+span {
+  color: #595959;
+  font-size: 0.8rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 2em;
+}
+
+header a {
+  text-decoration: none;
+  color: #595959;
+}
+
+nav ul {
+  display: flex;
+  gap: 1em;
+}
+
+nav ul li {
+  display: block;
+}
+
+.authentication a:last-child {
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+  margin-left: 1em;
+  background-color: #ade2df;
+  color: black;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: #ade2df;
+  padding: 2em;
+  text-align: center;
+}
+
+.section1 h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.section1 p {
+  font-size: 0.7rem;
+  color: #595959;
+}
+
+.download {
+  margin-block: 1em 2em;
+}
+
+.download a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 1em;
+  border-radius: 0.3em;
+}
+
+.section2 {
+  padding: 2em 3em;
+}
+
+.section2 ul {
+  display: flex;
+  justify-content: center;
+}
+
+.section2 ul li {
+  display: block;
+  text-align: center;
+  padding: 3em 1em;
+}
+
+.section2 ul li p:first-of-type {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.section2 ul li p:last-of-type {
+  color: #595959;
+  font-size: 0.7rem;
+}
+
+.section2 ul li:first-of-type,
+.section2 ul li:last-of-type {
+  border-inline: 2px solid #ddd;
+}
+
+.section3 {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  background-color: #ade2df;
+  padding-inline: 5em;
+}
+
+.section3 .phone-image {
+  border: 2px dotted #aaa;
+}
+
+.section3 img {
+  width: 100%;
+  height: auto;
+}
+
+.section3 h2 {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.section3 div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+}
+
+.section3 a {
+  color: #595959;
+  text-decoration: none;
+  border-bottom: 1px solid #595959;
+  padding-bottom: 0.2em;
+  align-self: baseline;
+  font-size: 0.9em;
+}
+
+.section4 {
+  background-color: #eee;
+  padding-block: 2em;
+}
+
+.section4 > div {
+  text-align: center;
+}
+
+.section4 > div a {
+  background-color: #ade2df;
+  padding: 0.5em 0.7em;
+  color: #595959;
+  text-decoration: none;
+  font-size: 0.8em;
+  border-radius: 0.3em;
+}
+
+.section4 > div h2 {
+  font-weight: 500;
+  margin-block: 1em 2em;
+}
+
+.section4 > ul {
+  display: flex;
+  padding: 1em;
+  border: 2px solid #ddd;
+  background-color: #fff;
+}
+
+.section4 > ul li {
+  display: block;
+}
+
+.section4 ul li p:first-child {
+  text-align: center;
+}
+
+.section4 ul li p:last-of-type {
+  margin-top: 0.5em;
+  font-size: 1.5em;
+}
+
+.section4 ul li > span,
+.section5 span {
+  font-size: 1em;
+}
+
+.section4 ul li span {
+  color: #595959;
+  font-size: 0.8rem;
+}
+
+.section4 .fa-check {
+  color: black;
+}
+
+.section4 > ul > li {
+  flex-grow: 1;
+  padding: 1em;
+}
+
+.section4 > ul > li:nth-child(2) {
+  border-inline: 2px solid #ddd;
+}
+
+.section4 ul li section {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 2px solid #ddd;
+}
+
+.section4 ul li section a {
+  background-color: #ade2df;
+  color: black;
+  padding: 1em 2em;
+  text-decoration: none;
+  border-radius: 0.3em;
+  margin: 0 auto;
+  font-size: 0.7em;
+}
+
+.section4 > ul > li:last-of-type {
+  display: flex;
+  flex-direction: column;
+  background-color: #ade2df;
+}
+
+.section4 ul li p:first-of-type {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.section4 > ul > li:last-of-type p:last-of-type {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.section4 > ul > li:last-of-type a {
+  margin-top: auto;
+  background-color: black;
+  color: white;
+  padding-block: 0.8em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.8em;
+  border-radius: 0.3em;
+}
+
+.section5 {
+  background-color: #ade2df;
+  padding: 4em;
+  text-align: center;
+}
+
+.section5 h2 {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.section5 .download {
+  margin-block: 3em 0;
+}
+
+footer {
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul {
+  display: flex;
+  gap: 0.5em;
+}
+
+footer ul li {
+  display: block;
+}
