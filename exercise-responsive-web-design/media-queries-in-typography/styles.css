@@ -1,0 +1,63 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(238, 238, 238);
+}
+
+h2 {
+  font-family: serif;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em;
+}
+
+.page main {
+  flex-basis: 70%;
+  flex-grow: 1;
+}
+
+.page > header {
+  flex-basis: 100%;
+  border-bottom: 2px solid black;
+}
+
+.image-frame {
+  border: 3px solid black;
+  padding: 0.5em;
+  min-width: fit-content;
+  background-color: #fff;
+  box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.5);
+}
+
+section:nth-of-type(1) .image-frame {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+section:nth-of-type(3) .image-frame {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+blockquote {
+  font-family: Georgia, sans-serif;
+  font-style: italic;
+  opacity: 0.5;
+  border-left: 2px solid gray;
+  padding-left: 0.5em;
+  float: right;
+  width: 50%;
+}
+
+blockquote .author {
+  float: right;
+}
+
+section:nth-of-type(2) > p:nth-of-type(2) {
+  width: 50%;
+}

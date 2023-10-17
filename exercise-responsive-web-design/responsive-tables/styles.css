@@ -1,0 +1,50 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  padding: 3em;
+  background-color: #eeeeee;
+}
+
+th {
+  background-color: #333333;
+  color: #fff;
+}
+
+th {
+  padding: 0.5em;
+  width: 10em;
+  text-align: left;
+}
+
+td {
+  padding: 0.4em;
+}
+
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+@media (max-width: 600px) {
+  th {
+    display: none;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 1em;
+  }
+}

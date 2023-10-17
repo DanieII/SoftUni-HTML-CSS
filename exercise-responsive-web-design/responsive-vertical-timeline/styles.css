@@ -1,0 +1,87 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #aaa;
+  padding: 1em;
+}
+
+.timeline > p {
+  border: 2px solid #aaa;
+  padding: 0.5em 1em;
+  align-self: flex-start;
+}
+
+.timeline .event {
+  position: relative;
+  margin-left: 2em;
+}
+
+.timeline .event h2 {
+  margin-top: 0;
+}
+
+.timeline .event:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: green;
+  top: 0;
+  left: -2em;
+  z-index: 10;
+  border: 3px solid #aaa;
+}
+
+.timeline .event:after {
+  content: "";
+  width: 5px;
+  height: 100%;
+  background-color: #aaa;
+  position: absolute;
+  top: 0;
+  left: -1.4em;
+}
+
+.timeline .event:nth-child(odd):before {
+  background-color: orange;
+}
+
+@media (min-width: 1300px) {
+  .timeline > p {
+    align-self: center;
+  }
+
+  .timeline .event {
+    width: 50%;
+    margin-left: 0;
+  }
+
+  .timeline .event:nth-child(odd):before,
+  .timeline .event:nth-child(odd):after {
+    right: 1.1em;
+    left: unset;
+  }
+
+  .timeline .event:nth-child(even):before {
+    transform: translateX(-5%);
+  }
+
+  .timeline .event:nth-child(odd):before {
+    transform: translateX(40%);
+  }
+
+  .timeline .event:nth-child(even) {
+    margin-left: auto;
+  }
+
+  .timeline .event:nth-child(odd) h2 {
+    text-align: right;
+    padding-right: 2em;
+  }
+
+  .timeline .event:nth-child(odd) * {
+    padding-right: 2em;
+    text-align: right;
+  }
+}
