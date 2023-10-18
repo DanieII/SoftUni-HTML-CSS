@@ -8,7 +8,7 @@
 
 html {
   font:
-    16px/1.5 Lato,
+    15px/1.5 Lato,
     sans-serif;
 }
 
@@ -46,31 +46,50 @@ header .container ul li {
   display: block;
 }
 
+.courses {
+  background-color: #54546d;
+}
+
+.courses .container {
+  position: relative;
+}
+
+.calculator {
+  position: absolute;
+  top: 10%;
+  left: -10em;
+}
+
 .courses .container > h2 {
   text-align: center;
+  padding-block: 2em 7em;
+  color: #fff;
 }
 
 .courses .cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 2em;
+  position: absolute;
+  top: 50%;
+  left: 0;
 }
 
 .courses .card {
   display: flex;
   flex-direction: column;
-  flex-basis: 30%;
+  flex-basis: 33%;
   text-align: center;
   border: 1px solid #dddde1;
   border-radius: 0.5em;
   padding-top: 1.5em;
-  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
 }
 
 .courses .card a {
   background-color: #9a5dc6;
-  margin: 2em auto;
-  padding: 0.5em 1.5em;
+  margin: auto;
+  padding: 0.9em 1.8em;
   border-radius: 2em;
   color: #fff;
   text-decoration: none;
@@ -80,11 +99,11 @@ header .container ul li {
 
 .courses .card .price {
   display: flex;
-  justify-content: center;
-  margin-top: auto;
+  justify-content: space-evenly;
   padding-block: 1em;
   border-bottom-right-radius: 0.5em;
   border-bottom-left-radius: 0.5em;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.5);
 }
 
 .courses .card .price * {
@@ -108,7 +127,92 @@ header .container ul li {
   gap: 1em;
 }
 
-.courses .card .price div:nth-child(2) {
-  border-left: 2px solid #fff;
-  padding-left: 1em;
+.courses .card:nth-child(2) > p,
+.courses .card:nth-child(3) > p {
+  padding: 0.5em 0.5em 1.5em 0.5em;
+}
+
+.courses .card:nth-of-type(2) div:first-of-type {
+  position: relative;
+}
+
+.courses .card:nth-of-type(2) div:first-of-type,
+.courses .card:nth-of-type(3) div:first-of-type {
+  border-right: 2px solid #fff;
+  padding-right: 1em;
+}
+
+.courses .card .price div p:first-of-type {
+  font-size: 1.5em;
+}
+
+.section2 {
+  padding-top: 18em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section2 > p {
+  padding-block: 1em 2em;
+}
+
+.section2 .table {
+  display: flex;
+  flex-direction: column;
+}
+
+.section2 .table .row {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1em;
+  align-items: center;
+  padding: 1em;
+}
+
+.section2 .table .row:first-of-type {
+  border-top-left-radius: 0.5em;
+}
+
+.section2 .table .row:last-of-type {
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+.section2 .table .row div {
+  display: flex;
+  align-items: center;
+  padding-right: 5em;
+}
+
+.section2 .table .row div img:first-of-type {
+  padding-right: 10em;
+}
+
+.section2 .table .row:nth-of-type(odd) {
+  background-color: #e6e6e6;
+}
+
+.section2 .table .row:nth-of-type(even) {
+  background-color: #f8f8f8;
+}
+
+.section3 .container {
+  display: flex;
+  margin-top: 6em;
+}
+
+.section3 p {
+  padding-block: 1em;
+}
+
+.section3 img {
+  align-self: center;
+  padding-left: 4em;
+}
+
+footer {
+  padding: 2em;
+  text-align: center;
+  background-color: #54546d;
+  color: #7481a3;
 }
