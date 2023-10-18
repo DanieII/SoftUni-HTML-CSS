@@ -1,0 +1,114 @@
+@import url("@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font:
+    16px/1.5 Lato,
+    sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1em 2em;
+}
+
+header img {
+  max-width: 15%;
+}
+
+header .container ul {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+header .container ul li {
+  display: block;
+}
+
+.courses .container > h2 {
+  text-align: center;
+}
+
+.courses .cards {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.courses .card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  text-align: center;
+  border: 1px solid #dddde1;
+  border-radius: 0.5em;
+  padding-top: 1.5em;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.5);
+}
+
+.courses .card a {
+  background-color: #9a5dc6;
+  margin: 2em auto;
+  padding: 0.5em 1.5em;
+  border-radius: 2em;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+.courses .card .price {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  padding-block: 1em;
+  border-bottom-right-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+}
+
+.courses .card .price * {
+  color: #fff;
+}
+
+.courses .card:nth-child(1) .price {
+  background: linear-gradient(to right, #029a3c, #4dd782);
+}
+
+.courses .card:nth-child(2) .price {
+  background: linear-gradient(to right, #4c6b87, #629acf);
+}
+
+.courses .card:nth-child(3) .price {
+  background: linear-gradient(to right, #4b38a5, #8d7ee2);
+}
+
+.courses .card:nth-child(2) .price,
+.courses .card:nth-child(3) .price {
+  gap: 1em;
+}
+
+.courses .card .price div:nth-child(2) {
+  border-left: 2px solid #fff;
+  padding-left: 1em;
+}
