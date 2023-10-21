@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "PT Sans", sans-serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.items {
+  display: flex;
+}
+
+.item {
+  flex-basis: 30%;
+  text-align: center;
+}
+
+.item .red {
+  color: #d01919;
+}
+
+.items-title {
+  position: relative;
+  text-align: center;
+  margin-block: 1em 2em;
+  padding-bottom: 1em;
+}
+
+.items-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1.5em;
+  height: 2px;
+  background-color: #d01919;
+}
+
+header {
+  background-color: #d01919;
+  padding: 1em 2em;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+header ul {
+  display: flex;
+  gap: 0.5em;
+}
+
+header li {
+  display: block;
+}
+
+.hero {
+  background-image: url("image/fitness-main.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 600px;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.hero ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2.5em;
+  padding-top: 1.5em;
+}
+
+.hero li {
+  display: block;
+}
+
+.hero div {
+  margin: auto;
+  text-align: center;
+}
+
+.hero div p {
+  padding: 2em;
+}
+
+.hero div a {
+  background-color: #d01919;
+  color: #fff;
+  padding: 0.5em 1.5em;
+  border-radius: 0.3em;
+  text-decoration: none;
+}
+
+.hero div p {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.hero div h1 {
+  font-size: 2.5em;
+  letter-spacing: 5px;
+}
+
+.welcome {
+  padding-block: 1em 2em;
+}
+
+.welcome .items {
+  gap: 10em;
+  padding-inline: 2em;
+}
+
+.welcome img {
+  width: 25%;
+  margin: 0 auto;
+}
+
+.welcome h3 {
+  padding-block: 1em 0.5em;
+}
+
+.coaches {
+  background-color: #efefef;
+  padding-block: 1em 2em;
+}
+
+.coaches .items {
+  gap: 10em;
+}
+
+.coaches h3 {
+  font-weight: bold;
+  padding-block: 0.5em;
+}
+
+.coaches .red {
+  padding-bottom: 0.5em;
+}
+
+.coaches p:not(.red) {
+  color: #595959;
+}
+
+footer {
+  background-color: #d01919;
+  padding-block: 1em;
+  text-align: center;
+}
